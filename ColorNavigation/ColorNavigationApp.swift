@@ -1,17 +1,16 @@
-//
-//  ColorNavigationApp.swift
-//  ColorNavigation
-//
-//  Created by Marcus August Christensen on 29/10/2023.
-//
-
 import SwiftUI
+import CruiseControl
 
 @main
 struct ColorNavigationApp: App {
+    
+    init() {
+        initializeCruiseControl()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
