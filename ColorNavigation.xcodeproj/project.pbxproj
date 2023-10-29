@@ -40,7 +40,6 @@
 		873F29612AEEF2DA00136152 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
 		873F29632AEEF2DA00136152 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
 		873F29642AEEF2DA00136152 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		873F296C2AEEF34600136152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +73,6 @@
 		873F29232AEEF1BB00136152 /* ColorNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				873F296C2AEEF34600136152 /* Info.plist */,
 				873F29242AEEF1BB00136152 /* ColorNavigationApp.swift */,
 				873F295F2AEEF2DA00136152 /* Resources */,
 				873F295C2AEEF2A200136152 /* Navigation */,
