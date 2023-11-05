@@ -30,22 +30,22 @@ struct MainRootView: View {
 class MainRootViewModel: ObservableObject {
     var buttons: [DemoButtonViewModel] = [
         DemoButtonViewModel(title: "Navigate to 🟥", action: {
-            navigationService?.push(MainDestinations.red)
+            navigationService.push(MainDestinations.red)
         }),
         DemoButtonViewModel(title: "Push 🟦 🟨", action: {
-            navigationService?.push([MainDestinations.blue, .yellow])
+            navigationService.push([MainDestinations.blue, .yellow])
         }),
         DemoButtonViewModel(title: "Display sheet 🟥") {
-            navigationService?.display(MainDestinations.redSheet)
+            navigationService.display(MainDestinations.redSheet)
         },
         DemoButtonViewModel(title: "Display Demo Alert 🚨") {
-            navigationService?.display(
+            navigationService.display(
                 MainDestinations.self,
                 alertModel: AlertModel(
                     title: "Demo Title",
                     message: "This is a demo alert!",
                     buttons: [AlertButton(title: "Close", role: .cancel, action: {
-                        navigationService?.dismissAlert(MainDestinations.self)
+                        navigationService.dismissAlert(MainDestinations.self)
                     })]))
         }
     ]

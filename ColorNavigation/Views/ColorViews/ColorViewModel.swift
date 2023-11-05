@@ -11,7 +11,7 @@ extension ColorViewModel {
     static var red: ColorViewModel {
         ColorViewModel(color: .red, buttons: [
             DemoButtonViewModel(title: "Navigate to 🟦") {
-                navigationService?.push(MainDestinations.blue)
+                navigationService.push(MainDestinations.blue)
             },
             .createBackNavigation()
         ])
@@ -20,7 +20,7 @@ extension ColorViewModel {
     static var redSheet: ColorViewModel {
         ColorViewModel(color: .red, buttons: [
             DemoButtonViewModel(title: "Close sheet 🚪") {
-                navigationService?.dismissSheet(MainDestinations.self)
+                navigationService.dismissSheet(MainDestinations.self)
             }
         ])
     }
@@ -28,11 +28,11 @@ extension ColorViewModel {
     static var blue: ColorViewModel {
         ColorViewModel(color: .blue, buttons: [
             DemoButtonViewModel(title: "Navigate to 🟨") {
-                navigationService?.push(MainDestinations.yellow)
+                navigationService.push(MainDestinations.yellow)
             },
             .createBackNavigation(),
             DemoButtonViewModel(title: "Navigate to 🫚") {
-                navigationService?.popToRoot(MainDestinations.self)
+                navigationService.popToRoot(MainDestinations.self)
             },
         ])
     }
@@ -40,14 +40,14 @@ extension ColorViewModel {
     static var yellow: ColorViewModel {
         ColorViewModel(color: .yellow, buttons: [
             DemoButtonViewModel(title: "Navigate to 🟩") {
-                navigationService?.push(MainDestinations.green)
+                navigationService.push(MainDestinations.green)
             },
             DemoButtonViewModel(title: "Pop to 🟥") {
-                navigationService?.pop(to: MainDestinations.red)
+                navigationService.pop(to: MainDestinations.red)
             },
             .createBackNavigation(),
             DemoButtonViewModel(title: "Navigate to 🫚") {
-                navigationService?.popToRoot(MainDestinations.self)
+                navigationService.popToRoot(MainDestinations.self)
             },
         ])
     }
@@ -55,7 +55,7 @@ extension ColorViewModel {
         ColorViewModel(color: .green, buttons: [
             .createBackNavigation(),
             DemoButtonViewModel(title: "Navigate to 🫚") {
-                navigationService?.popToRoot(MainDestinations.self)
+                navigationService.popToRoot(MainDestinations.self)
             },
         ])
     }

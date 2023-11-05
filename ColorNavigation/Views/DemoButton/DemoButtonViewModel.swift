@@ -11,7 +11,7 @@ struct DemoButtonViewModel: Identifiable {
 extension DemoButtonViewModel {
     static func createBackNavigation() -> DemoButtonViewModel {
         DemoButtonViewModel(title: "Navigate back 🔙") {
-            navigationService?.pop(MainDestinations.self)
+            navigationService.pop(MainDestinations.self)
         }
     }
 }

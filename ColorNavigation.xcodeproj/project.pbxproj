@@ -22,6 +22,7 @@
 		873F29662AEEF2DA00136152 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 873F29612AEEF2DA00136152 /* Oswald-Medium.ttf */; };
 		873F29682AEEF2DA00136152 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 873F29632AEEF2DA00136152 /* Oswald-Regular.ttf */; };
 		873F29692AEEF2DA00136152 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F29642AEEF2DA00136152 /* Fonts.swift */; };
+		876162872AF817F600BFB026 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876162862AF817F600BFB026 /* NavigationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		873F29612AEEF2DA00136152 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
 		873F29632AEEF2DA00136152 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
 		873F29642AEEF2DA00136152 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		876162862AF817F600BFB026 /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				873F295D2AEEF2A200136152 /* MainDestinations.swift */,
+				876162862AF817F600BFB026 /* NavigationService.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				873F29562AEEF27F00136152 /* ColorViewModel.swift in Sources */,
 				873F295E2AEEF2A200136152 /* MainDestinations.swift in Sources */,
 				873F29552AEEF27F00136152 /* ColorView.swift in Sources */,
+				876162872AF817F600BFB026 /* NavigationService.swift in Sources */,
 				873F295A2AEEF27F00136152 /* MainView.swift in Sources */,
 				873F29572AEEF27F00136152 /* DemoButton.swift in Sources */,
 				873F29692AEEF2DA00136152 /* Fonts.swift in Sources */,
