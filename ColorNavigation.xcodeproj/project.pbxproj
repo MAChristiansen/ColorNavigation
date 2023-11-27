@@ -10,7 +10,6 @@
 		873F29252AEEF1BB00136152 /* ColorNavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F29242AEEF1BB00136152 /* ColorNavigationApp.swift */; };
 		873F29292AEEF1BC00136152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873F29282AEEF1BC00136152 /* Assets.xcassets */; };
 		873F292C2AEEF1BC00136152 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873F292B2AEEF1BC00136152 /* Preview Assets.xcassets */; };
-		873F29342AEEF25800136152 /* CruiseControl in Frameworks */ = {isa = PBXBuildFile; productRef = 873F29332AEEF25800136152 /* CruiseControl */; };
 		873F29552AEEF27F00136152 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F29432AEEF27F00136152 /* ColorView.swift */; };
 		873F29562AEEF27F00136152 /* ColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F29442AEEF27F00136152 /* ColorViewModel.swift */; };
 		873F29572AEEF27F00136152 /* DemoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F29462AEEF27F00136152 /* DemoButton.swift */; };
@@ -23,6 +22,10 @@
 		873F29682AEEF2DA00136152 /* Oswald-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 873F29632AEEF2DA00136152 /* Oswald-Regular.ttf */; };
 		873F29692AEEF2DA00136152 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F29642AEEF2DA00136152 /* Fonts.swift */; };
 		876162872AF817F600BFB026 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876162862AF817F600BFB026 /* NavigationService.swift */; };
+		878DE7AA2B151EB600750E22 /* CruiseControl in Frameworks */ = {isa = PBXBuildFile; productRef = 878DE7A92B151EB600750E22 /* CruiseControl */; };
+		878DE7AC2B151EFF00750E22 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878DE7AB2B151EFF00750E22 /* MainTabBar.swift */; };
+		878DE7AF2B1523A200750E22 /* MainTabDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878DE7AE2B1523A200750E22 /* MainTabDestination.swift */; };
+		878DE7B12B1523C000750E22 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878DE7B02B1523C000750E22 /* SquareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		873F29632AEEF2DA00136152 /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
 		873F29642AEEF2DA00136152 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		876162862AF817F600BFB026 /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		878DE7AB2B151EFF00750E22 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		878DE7AE2B1523A200750E22 /* MainTabDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabDestination.swift; sourceTree = "<group>"; };
+		878DE7B02B1523C000750E22 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873F29342AEEF25800136152 /* CruiseControl in Frameworks */,
+				878DE7AA2B151EB600750E22 /* CruiseControl in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +101,7 @@
 		873F29412AEEF27F00136152 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				878DE7AD2B15237900750E22 /* MainTabBar */,
 				873F29422AEEF27F00136152 /* ColorViews */,
 				873F29452AEEF27F00136152 /* DemoButton */,
 				873F29482AEEF27F00136152 /* MainView */,
@@ -150,6 +157,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		878DE7AD2B15237900750E22 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				878DE7AB2B151EFF00750E22 /* MainTabBar.swift */,
+				878DE7AE2B1523A200750E22 /* MainTabDestination.swift */,
+				878DE7B02B1523C000750E22 /* SquareView.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,7 +184,7 @@
 			);
 			name = ColorNavigation;
 			packageProductDependencies = (
-				873F29332AEEF25800136152 /* CruiseControl */,
+				878DE7A92B151EB600750E22 /* CruiseControl */,
 			);
 			productName = ColorNavigation;
 			productReference = 873F29212AEEF1BB00136152 /* ColorNavigation.app */;
@@ -233,10 +250,13 @@
 				873F29592AEEF27F00136152 /* MainRootView.swift in Sources */,
 				873F29562AEEF27F00136152 /* ColorViewModel.swift in Sources */,
 				873F295E2AEEF2A200136152 /* MainDestinations.swift in Sources */,
+				878DE7AC2B151EFF00750E22 /* MainTabBar.swift in Sources */,
 				873F29552AEEF27F00136152 /* ColorView.swift in Sources */,
 				876162872AF817F600BFB026 /* NavigationService.swift in Sources */,
+				878DE7B12B1523C000750E22 /* SquareView.swift in Sources */,
 				873F295A2AEEF27F00136152 /* MainView.swift in Sources */,
 				873F29572AEEF27F00136152 /* DemoButton.swift in Sources */,
+				878DE7AF2B1523A200750E22 /* MainTabDestination.swift in Sources */,
 				873F29692AEEF2DA00136152 /* Fonts.swift in Sources */,
 				873F29252AEEF1BB00136152 /* ColorNavigationApp.swift in Sources */,
 			);
@@ -452,7 +472,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		873F29332AEEF25800136152 /* CruiseControl */ = {
+		878DE7A92B151EB600750E22 /* CruiseControl */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 873F29322AEEF25800136152 /* XCRemoteSwiftPackageReference "CruiseControl" */;
 			productName = CruiseControl;
